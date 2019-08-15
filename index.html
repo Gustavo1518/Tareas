@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Lista De Actividades En El Conacyt</title>
@@ -14,7 +13,7 @@
         <div class="alert alert-success" role="alert" v-for="(hacer, index) of tareas">
             <div class="d-flex justify-content-between">
                 <div class="elementos">
-                    {{ index }} - {{ hacer.tarea }}
+                    {{ index + 1 }} - {{ hacer.tarea }}
                 </div>
                 <div class="botones">
                     <button class="btn btn-danger" @click="Borrar(index)">Delete</button>
